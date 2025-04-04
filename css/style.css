@@ -1,6 +1,7 @@
-body {
+/* BODY e HTML Hs*/
+html, body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -8,17 +9,69 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
+/* BODY e HTML Hs Fim*/
+
+/* HEADER */
 .headerContainer {
-    border: solid 1px #fd0000;
-    background-color: #f8f9fa;
+    text-align: center;
 }
+.headerContainer nav {
+    display: flex;
+    flex-direction: row;
+}
+.headerContainer #logo {
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+}
+.headerContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContainer ul li {
+    display: inline;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.headerContainer ul li:hover {
+    background-color: #5555556c;
+    color: white;
+}
+.headerContainer ul li.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.headerContainer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* HEADER Fim*/
+
+/* MAIN */
 .mainContainer {
-    border: solid 1px #8d36ff;
-    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 0;
 }
+.mainContainer #sobre {
+    width: 50%;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    /* border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: #ffffff;
+}
+
 
 .footerContainer {
     border: solid 1px #1227e0;
-    background-color: #f8f9fa;
+    background-color: #af16af;
 }
 
