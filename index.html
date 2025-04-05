@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="headerContainer">
-        <nav>
-            <img src="./img/resplandecer stories.PNG" alt="logo" id="logo">
+    <!-- Cabeça -->
+    <heade id="headerContainer" class="headerContainer">
+        <nav class="imgContainer">
+            <img src="./img/logoresplandecer.png" alt="logo">
+        </nav>
+        <nav class="menuContainer">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -17,22 +20,40 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="mainContainer">
-        <section id="sobre" class="section">
-            <h2>Rodigo</h2>
-            <h2>Maciel</h2>
-            <p>Fullstack Web Developer.</p>
-            <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação.</p>
-        </section>
-        <section id="rpmImg" class="section">
-            <img src="./img/rpm.jpg" alt="rpmFoto" id="foto">
-        </section>
+    </heade>
+    <!-- Cabeça FIM -->
+
+     <!-- Corpo -->
+     <main id="mainContainer" class="mainContainer">
+        <nav class="sobreContainer">
+            <section id="sobre" class="section">
+                <h1>Rodrigo <b>Maciel</b></h1>
+                <p>Fullstack Web Developer.</p>
+                <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação.</p>
+            </section>
+        </nav>
+        <nav class="photoContainer">
+            <section id="rpmImg" class="section">
+                <img src="./img/erasebg-transformed.png" alt="rpmFoto" id="foto">
+            </section>
+        </nav>
     </main>
-    <footer class="footerContainer">
+    <main id="aboutMeContainer" class="aboutMeContainer">
+            <nav class="aboutPhoto">
+                <img src="img/eu.png" alt="aboutImg">
+            </nav>
+            <nav>
+                sobre mim
+            </nav>
+    </main>
+     <!-- Corpo FIM-->
+
+     <!-- Roda-pe -->
+     <footer class="footerContainer">
         <p>&copy; 2023 Rodrigo Maciel. Todos os direitos reservados.</p>
         <p>Desenvolvido por Rodrigo Maciel</p>
     </footer>
+     <!-- Roda-pe FIM -->
     <script src="./js/index.js"></script>
 </body>
 </html>
