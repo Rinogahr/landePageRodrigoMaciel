@@ -1,21 +1,10 @@
-let animais = [];
-console.log(animais);
-animais.push("Cachorro", "Gato", "Passarinho");
-console.log(animais);
+// CARROSSEL
+const track = document.getElementById('carousel-track');
+const images = Array.from(track.children);
 
-animais.shift();
-console.log(animais);
-
-animais.unshift("Jacaré");
-console.log(animais);
-
-animais[1] = "Girafa";
-console.log(animais);
-
-let frutas = ["Manga", "Banana", "Maçan"];
-console.log(frutas.length);
-
-for (let i = 0; i < frutas.length; i++) {
-    console.log(frutas[i]);    
-}
-
+// Duplicar imagens
+images.forEach(img => {
+  const clone = img.cloneNode(true);
+  track.appendChild(clone);
+});
+// CARROSSEL FIM
