@@ -176,65 +176,83 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ABOUT ME FIM*/
 
-/* SKILL  */
+/* SKILL CONTAINER */
 .skillContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    margin: 20px;
 }
 .skillContainer h1{
-    text-align: center;
     font-size: 3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
-/* SKILL FIM */
+.skillContainer h1 img{
+    width: 5vw;
+    height: auto;
+}
 
 /* CARROSSEL */
-.carousel {
+.carousel-container {
     width: 100%;
-    max-width: 840px;
-    height: 200px;
-    overflow: hidden;
+    max-width: 800px;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     position: relative;
-    background-color: #fff;
-}
+  }
 
-.carousel-track {
+  .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 20px;
-    padding-left: 10px;
+  }
+
+  .carousel-slide {
+    min-width: 10vw;
+    min-height: 10vh;
+    background-color: #fdfdfd2d;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.carousel img {
-    width: auto;
-    height: 100%;
-    max-height: 160px;
-    object-fit: contain;
     padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    flex-shrink: 0;
-}
+    margin: 0 5px;
+    border-radius: 12px;
+    
+  }
 
-@keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  .carousel-slide img {
+    max-height: 90px;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
   }
 
 
-/* CARROSSEL FIM */
+/* CARROSSEL FIM*/
+
+/* SKILL CONTAINER FIM*/
 
 /* FOOTER FIM*/
 .footerContainer{
